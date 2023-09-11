@@ -1,5 +1,5 @@
 .background {
-  background-color:#F7F9FF; /* Change this to your preferred color */
+  background-color:#F7F9FF;
   margin: 0;
 }
 
@@ -7,12 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Center vertically within the viewport */
+  height: 100vh;
 }
 form {
   background-color: white;
     border-radius: 5px;
     padding: 3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn-custom {
