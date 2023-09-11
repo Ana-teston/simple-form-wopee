@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Application Form</title>
+</head>
+<body class="background">
+    <div class="container center-form">
+        <div class="col-lg-8 m-5">
+            <form action="you-are-in.html" method="get" role="form" class="career-application-form" id="career-application-form" name="career-application-form">
+                <h3 class="mb-4">🧐 Can you level up user experience?</h3>
+                <p>You just need:</p>
+                <!-- Checkbox Group -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="motivation" name="motivation">
+                    <label class="form-check-label" for="motivation">
+                        Motivation + courage + open mind <span style="color:red">*</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="interest" name="interest">
+                    <label class="form-check-label" for="interest">
+                        Genuine interest in web app UI + API development <span style="color:red">*</span>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="experience" name="experience">
+                    <label class="form-check-label" for="experience">Immediately applicable nodejs related or UX experience / knowledge<span id="shortcut" style="display:none;">=>shortcut</span>
+                    </label>
+                </div>
+
+                <!-- Input Fields for CV URLs -->
+                <div class="form-group my-4">
+                    <label for="cv">Url of your bio / profile / CV or just something about you:</label>
+                    <input type="url" class="form-control" id="cv" name="cv_url" placeholder="enter your bio / profile / CV Url" required>
+                </div>
+
+                <!-- Email Input Field -->
+                <div class="form-group mt-3">
+                    <label for="email">E-mail address to reach you:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-custom mt-4">Apply</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code to handle checkbox behavior
+        const checkboxes = document.querySelectorAll('.form-check-input');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                // When a checkbox is checked, do something
+                if (this.checked) {
+                    // You can add your custom logic here for each checkbox
+                    console.log(`Checkbox with id ${this.id} is checked.`);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

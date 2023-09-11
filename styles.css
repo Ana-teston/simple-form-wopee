@@ -1,0 +1,28 @@
+.background {
+  background-color:#F7F9FF; /* Change this to your preferred color */
+  margin: 0;
+}
+
+.center-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center vertically within the viewport */
+}
+form {
+  background-color: white;
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+.btn-custom {
+  color: white;
+  padding: 5px 24px;
+  border-radius: 4px;
+  background: #022A70;
+  transition: background 0.3s ease;
+}
+
+.btn-custom:hover {
+  background: #022a70e0;
+}
